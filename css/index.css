@@ -24,20 +24,10 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
+    background-color:#4a0d66;
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-family:Georgia,"Times New Roman",Times,serif;
+    font-size:14px;
     height:100%;
     margin:0px;
     padding:0px;
@@ -47,14 +37,14 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/walk-logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    padding:68px 0px 0px 0px;     /* image height is 68px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
@@ -97,6 +87,15 @@ h1 {
     display:none;
 }
 
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
@@ -112,4 +111,66 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+.fade-in{
+    animation:fade 3000ms;
+    -webkit-animation:fade 3000ms;
+}
+
+.loginForm.received {
+    margin-top: 20px;
+}
+
+input, button {
+    border: medium none;
+    box-shadow: -1px 1px 4px 0 rgba(50, 50, 50, 0.55) inset;
+    color: #010101;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 12px;
+    height: 42px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    width: 156px;
+}
+.form-group {
+	margin-bottom: 13px;
+}
+.form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.btn-success {
+	background-color: #4a0d66;
+	background-image: none;
+	border: 1px solid #ffa400;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #ffa400;
+	font-family: "UniversLT-Condensed",sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	height: 36px;
+	text-transform: uppercase;
+}
+.btn-success:active, .btn-success:focus, .btn-success:hover {
+	background-color: #75314d;
+	border: 1px solid #ffa400;
+	color: #ffa400;
+	-webkit-transition: background-color 0.3s ease 0s;
+	-moz-transition: background-color 0.3s ease 0s;
+	-o-transition: background-color 0.3s ease 0s;
+	transition: background-color 0.3s ease 0s;
 }

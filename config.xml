@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.example.hello" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloWorld</name>
+<widget id="com.alzheimers.walk" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Walk to End ALzheimer's&reg;</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        The Walk to End Alzheimer's is the world's largest event to fight Alzheimer's. Join now and help raise awareness and funds for care, support and research.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="info@alz.org" href="http://alz.org">
+        Alzheimer's Association
     </author>
     <content src="index.html" />
     <access origin="*" />
